@@ -18,13 +18,27 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <img class="header__logo" src="img/svg/logo.svg" alt="Логотип Смарт Дивайс." width="215" height="55">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/svg/logo-icon.svg" width="35" height="35">
+            <img class="header__logo" src="img/svg/logo.svg" alt="Логотип Смарт Дивайс." width="215" height="55">
+          </picture>
+
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
-              <a href="mailto:info@sd.ru" class="header__contacts-link">info@sd.ru</a>
+              <a href="mailto:info@sd.ru" class="header__contacts-link header-link">
+                <svg class="header-link__icon" width="20" height="20" viewBox="0 0 20 20"
+                  aria-label="отправить электронное письмо">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+                <span class="header-link__name">info@sd.ru</span></a>
             </li>
             <li class="header__contacts-item">
-              <a href="tel:+7495005252" class="header__contacts-link">+7 (495) 000 52 52</a>
+              <a href="tel:+7495005252" class="header__contacts-link header-link">
+                <svg class="header-link__icon" width="20" height="20" viewBox="0 0 20 20"
+                  aria-label="отправить электронное письмо">
+                  <use xlink:href="img/sprite.svg#icon-tel"></use>
+                </svg>
+                <span class="header-link__name">+7 (495) 000 52 52</span></a>
             </li>
           </ul>
           <button class="btn header__button" type="button" data-button="open-modal">Заказать звонок</button>
@@ -141,7 +155,7 @@
                 </div>
                 <div class="feedback-form__question">
                   <label>
-                    <textarea name="question" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                    <textarea name="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                     <span class="visually-hidden">Ваш вопрос</span>
                   </label>
                 </div>

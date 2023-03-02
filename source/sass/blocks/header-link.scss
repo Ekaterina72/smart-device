@@ -1,0 +1,25 @@
+.header-link {
+  line-height: 18px;
+  color: inherit;
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 15px;
+  align-items: center;
+  justify-items: start;
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include vp-1023 {
+    padding: 15px;
+    display: flex;
+  }
+}
+
+.header-link__name {
+  @include vp-1023 {
+    display: none;
+  }
+}
