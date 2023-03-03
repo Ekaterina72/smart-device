@@ -1,0 +1,16 @@
+.intro {
+  color: $color-alice-blue;
+  background-color: $color-black-pearl;
+  background-image: url("../../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__container {
+  padding-top: 305px;
+
+  @include vp-1023 {
+    padding-top: 180px;
+  }
+}
