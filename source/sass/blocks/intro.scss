@@ -90,6 +90,7 @@
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 21px;
+  color: $color-alice-blue;
   background-color: $color-deep-sky-blue;
   border-color: $color-deep-sky-blue;
 
@@ -101,5 +102,10 @@
     margin-left: 0;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  @include hover-focus {
+    background-color: $color-black-pearl;
+    border-color: $color-alice-blue;
   }
 }

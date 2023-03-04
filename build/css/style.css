@@ -650,7 +650,6 @@ button,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #ffffff;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -678,6 +677,7 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 85%, rgba(4, 24, 39, 0));
   background: linear-gradient(to bottom, #041827 85%, rgba(4, 24, 39, 0));
+  z-index: 1;
 }
 
 .header__container {
@@ -806,8 +806,14 @@ button,
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 21px;
+  color: #f2f5f6;
   background-color: #00b2ff;
   border-color: #00b2ff;
+}
+
+.intro__button.focus-visible:focus {
+  background-color: #041827;
+  border-color: #f2f5f6;
 }
 
 .advantages {
@@ -877,6 +883,46 @@ button,
 
 .advantage-card__description {
   margin: 0 0 15px 0;
+}
+
+.about {
+  background-color: #f8fdff;
+}
+
+.about__container {
+  position: relative;
+  padding: 60px 0 100px 250px;
+}
+
+.about__container::before {
+  position: absolute;
+  content: "";
+  top: 60px;
+  left: 0;
+  width: 150px;
+  height: 320px;
+  background-image: url("../../img/year-img.png");
+  background-repeat: no-repeat;
+}
+
+.about__title {
+  margin: 0 0 15px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.about p {
+  margin: 0 0 40px 0;
+}
+
+.about__button {
+  min-width: 180px;
+  color: #00b2ff;
+  border-color: #00b2ff;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .modal {
@@ -1558,6 +1604,7 @@ button,
 @media (max-width: 1023px) {
   .header {
     position: absolute;
+    z-index: 0;
   }
 
   .header__container {
@@ -1633,6 +1680,14 @@ button,
   .advantage-card__description {
     margin-bottom: 10px;
   }
+
+  .about__container {
+    padding: 40px 0 80px 180px;
+  }
+
+  .about p:last-of-type {
+    margin-bottom: 10px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
@@ -1704,6 +1759,23 @@ button,
   .advantage-card__description {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .about__container {
+    padding: 25px 0 80px 0;
+  }
+
+  .about__container::before {
+    display: none;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__button {
+    min-width: 160px;
   }
 
   .modal__wrapper {
@@ -1797,6 +1869,11 @@ button,
 
   .header-link:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .intro__button:hover:not(.focus-visible) {
+    background-color: #041827;
+    border-color: #f2f5f6;
   }
 
   .advantage-card:hover:not(.focus-visible) {

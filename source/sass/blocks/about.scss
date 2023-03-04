@@ -1,0 +1,66 @@
+.about {
+  background-color: #f8fdff;
+}
+
+.about__container {
+  position: relative;
+  padding: 60px 0 100px 250px;
+
+  @include vp-1023 {
+    padding: 40px 0 80px 180px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 60px;
+    left: 0;
+    width: 150px;
+    height: 320px;
+    background-image: url("../../img/year-img.png");
+    background-repeat: no-repeat;
+  }
+
+  @include vp-767 {
+    padding: 25px 0 80px 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.about__title {
+  margin: 0 0 15px 0;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about p {
+  margin: 0 0 40px 0;
+}
+
+.about p:last-of-type {
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+}
+
+.about__button {
+  min-width: 180px;
+  color: $color-deep-sky-blue;
+  border-color: $color-deep-sky-blue;
+  font-size: 14px;
+  line-height: 16px;
+
+  @include vp-767 {
+    min-width: 160px;
+  }
+}
