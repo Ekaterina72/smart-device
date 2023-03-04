@@ -63,4 +63,10 @@
   @include vp-767 {
     min-width: 160px;
   }
+
+  @include hover-focus {
+    background-color: $color-black-pearl;
+    border-color: $color-black-pearl;
+    color: $color-alice-blue;
+  }
 }

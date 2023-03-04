@@ -1,0 +1,16 @@
+.footer-tel {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-tel__link {
+  color: inherit;
+
+  @include hover-focus {
+    color: $color-alice-blue;
+  }
+}

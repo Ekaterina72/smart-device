@@ -1,0 +1,19 @@
+.socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.socials__link {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
