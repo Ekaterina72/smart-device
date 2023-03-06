@@ -1,0 +1,111 @@
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 15px;
+  font: inherit;
+  color: inherit;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color $trans-default;
+
+  &::placeholder {
+    font: inherit;
+    color: inherit;
+  }
+
+  @include hover-focus {
+    background-color: rgba(4, 20, 39, 0.1);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+}
+
+.feedback-form__question {
+  grid-column: span 2;
+
+  @include vp-1023 {
+    grid-column: span 1;
+  }
+}
+
+.feedback-form textarea {
+  height: 155px;
+  padding: 25px 15px;
+}
+
+.feedback-form__button {
+  min-width: 265px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $color-black-pearl;
+  color: $color-default-white;
+
+  @include vp-767 {
+    min-width: 270px;
+  }
+
+  @include hover-focus {
+    background-color: transparent;
+    border-color: $color-black-pearl;
+    color: $color-black-pearl;
+  }
+}
+
+.feedback-form__checkbox label {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 15px auto;
+  align-items: center;
+  gap: 11px;
+  cursor: pointer;
+}
+
+.feedback-form input[type=checkbox] {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.feedback-form input[type=checkbox] + span {
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.feedback-form input[type=checkbox]:checked + span {
+  background-image: url("../../img/svg/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback-form__checkbox label:hover input[type=checkbox] + span,
+.feedback-form__checkbox label:focus-within input[type=checkbox] + span {
+  border-color: rgba(4, 24, 39, 0.5);
+}

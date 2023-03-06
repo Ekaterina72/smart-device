@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -23,11 +24,17 @@
 @import "blocks/intro";
 @import "blocks/advantages";
 @import "blocks/advantage-card";
+@import "blocks/section-title";
+@import "blocks/products";
+@import "blocks/product-card";
 @import "blocks/about";
+@import "blocks/feedback";
+@import "blocks/feedback-form";
 @import "blocks/footer";
 @import "blocks/socials";
 @import "blocks/navigation";
 @import "blocks/footer-tel";
+@import "blocks/accordion";
 @import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";

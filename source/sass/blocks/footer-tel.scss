@@ -4,7 +4,12 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+
+  @include vp-767 {
+    gap: 10px;
+    margin: 0;
+  }
 }
 
 .footer-tel__link {
