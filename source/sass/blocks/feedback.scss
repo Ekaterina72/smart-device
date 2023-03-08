@@ -1,6 +1,6 @@
 .feedback {
   color: $color-default-white;
-  background: linear-gradient(-45deg, transparent 65%, rgba(4, 24, 39, 0.5) 65%),
+  background: linear-gradient(-41deg, transparent 66.5%, rgba(4, 24, 39, 0.5) 66.5%),
     linear-gradient($color-deep-sky-blue, $color-deep-sky-blue);
 
   @include vp-1023 {
@@ -9,13 +9,33 @@
 }
 
 .feedback__container {
-  padding: 170px 0 170px;
-  background-image: url("../../img/svg/paper_airplane.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
+  padding: 165px 0 250px;
+  display: flex;
+
+  &::before {
+    content: "";
+    width: 510px;
+    height: 285px;
+    margin-top: 82px;
+    margin-left: auto;
+    margin-right: 10%;
+    background-image: url("../../img/svg/paper_airplane.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
 
   @include vp-1023 {
-    background-image: none;
+    padding: 46px 0 125px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    padding-bottom: 88px;
   }
 }
 
@@ -25,12 +45,17 @@
   margin-right: 12px;
 
   @include vp-1023 {
+    max-width: 100%;
     margin: 0;
   }
 }
 
 .feedback__title {
   margin: 0 0 14px 0;
+
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
 
   @include vp-767 {
     font-size: 30px;
@@ -39,14 +64,14 @@
 }
 
 .feedback__description {
-  margin: 0 0 35px;
+  margin: 0 0 30px;
 
   @include vp-1023 {
     margin-bottom: 25px;
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 14px;
     line-height: 19px;
   }

@@ -3,16 +3,28 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 20px;
+  align-items: center;
+
+  &--modal {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  @include vp-1023 {
+    width: 100%;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 19px;
   }
 }
 
 .feedback-form input,
 .feedback-form textarea {
   width: 100%;
-  padding: 15px;
+  padding: 14px 15px;
   font: inherit;
   color: inherit;
   background-color: rgba(4, 20, 39, 0.15);
@@ -37,29 +49,46 @@
   }
 }
 
-.feedback-form__question {
+.feedback-form:not(.feedback-form--modal) .feedback-form__question {
   grid-column: span 2;
 
-  @include vp-1023 {
+  @include vp-767 {
     grid-column: span 1;
   }
 }
 
 .feedback-form textarea {
   height: 155px;
-  padding: 25px 15px;
+  padding: 22px 15px;
+
+  @include vp-1023 {
+    padding: 28px 15px;
+  }
+
+  @include vp-1023 {
+    height: 180px;
+    padding: 20px 15px;
+  }
 }
 
 .feedback-form__button {
   min-width: 265px;
-  margin-top: 15px;
+  margin-top: 7px;
+  padding: 13px 25px;
+  justify-self: start;
   font-size: 16px;
   line-height: 19px;
   background-color: $color-black-pearl;
   color: $color-default-white;
 
+  &--modal {
+    margin-top: 0;
+    width: 100%;
+  }
+
   @include vp-767 {
-    min-width: 270px;
+    min-width: 100%;
+    margin-top: 4px;
   }
 
   @include hover-focus {
@@ -70,12 +99,27 @@
 }
 
 .feedback-form__checkbox label {
-  margin-top: 15px;
+  margin: 20px 0 0 12px;
   display: grid;
   grid-template-columns: 15px auto;
   align-items: center;
+  justify-self: end;
   gap: 11px;
+  font-size: 14px;
+  line-height: 16px;
   cursor: pointer;
+
+  @include vp-1023 {
+    margin: 14px 0 0;
+  }
+
+  @include vp-1023 {
+    margin: 4px 5px 0;
+  }
+}
+
+.feedback-form__checkbox--modal label {
+  margin: 3px 0 0 7px;
 }
 
 .feedback-form input[type=checkbox] {

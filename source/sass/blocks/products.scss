@@ -9,11 +9,11 @@
 
   @include vp-1023 {
     align-items: center;
-    padding: 60px 0 65px;
+    padding: 57px 0 66px;
   }
 
   @include vp-767 {
-    padding: 50px 0 76px;
+    padding: 47px 0 76px;
   }
 }
 
@@ -21,10 +21,31 @@
   margin: 0 0 50px 0;
   color: $color-default-white;
 
+  &::before {
+    width: 100%;
+    height: 100%;
+    content: "Smart Device предлагает следующие товары и услуги";
+  }
+
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
+
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     font-size: 28px;
     line-height: 40px;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      content: "Товары и услуги Smart Device";
+    }
+  }
+
+  @include vp-374 {
+    max-width: 200px;
+    align-self: start;
   }
 }
 

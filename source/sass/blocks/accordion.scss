@@ -53,10 +53,12 @@
   }
 }
 
-.is-active {
-  padding-bottom: 20px;
-}
+@include vp-767 {
+  .is-active {
+    padding-bottom: 20px;
+  }
 
-.is-active .accordion__button::after {
-  transform: rotate(-180deg);
+  .is-active .accordion__button::after {
+    transform: rotate(-180deg);
+  }
 }

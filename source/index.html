@@ -41,7 +41,7 @@
                 <span class="header-link__name">+7 (495) 000 52 52</span></a>
             </li>
           </ul>
-          <button class="btn header__button" type="button" data-button="open-modal">Заказать звонок</button>
+          <button class="btn header__button" type="button" data-open-modal="feedback">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -51,7 +51,8 @@
           <div class="intro__container">
             <h1 class="intro__title">Печатные платы</h1>
             <p class="intro__description">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-            <a class="intro__button btn" href="#feedback">Получить бесплатную консультацию</a>
+            <a class="intro__button btn" href="#feedback">
+              <span class="visually-hidden">Получить бесплатную консультацию</span></a>
           </div>
         </div>
       </section>
@@ -128,7 +129,9 @@
       <section class="products">
         <div class="container">
           <div class="products__container">
-            <h2 class="products__title section-title">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+            <h2 class="products__title section-title">
+              <span class="visually-hidden">Smart Device предлагает следующие товары и услуги</span>
+            </h2>
             <ul class="products__list">
               <li class="products__item product-card product-card--production">
                 <a class="product-card__link" href="production.html">
@@ -220,7 +223,7 @@
           <div class="accordion footer__accordion" data-accordion="parent" data-single
             data-destroy="(max-width: 767px)">
             <div class="footer__navigation accordion__element navigation" data-accordion="element">
-              <button class="accordion__button btn footer__title" data-accordion="button">
+              <button class="accordion__button btn footer__title" type="button" data-accordion="button">
                 Разделы сайта
               </button>
               <ul class="accordion__content navigation__list" data-accordion="content">
@@ -276,26 +279,43 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
+        <h2 class="modal__title">Закажите звонок</h2>
+        <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="modal__form feedback-form feedback-form--modal" action="https://echo.htmlacademy.ru/"
+          method="post">
+          <div class="feedback-form__name">
+            <label>
+              <input type="text" name="user-name" required placeholder="Имя">
+              <span class="visually-hidden">Ваше имя</span>
+            </label>
+          </div>
+          <div class="feedback-form__tel">
+            <label>
+              <input type="tel" name="user-tel" required placeholder="Телефон" aria-label="tel input">
+              <span class="visually-hidden">Контактный телефон</span>
+            </label>
+          </div>
+          <div class="feedback-form__question">
+            <label>
+              <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              <span class="visually-hidden">Ваш вопрос</span>
+            </label>
+          </div>
+          <button class="btn feedback-form__button feedback-form__button--modal" type="submit">Отправить</button>
+          <div class="feedback-form__checkbox feedback-form__checkbox--modal">
+            <label>
+              <input type="checkbox" name="user-data-agreement" checked required>
+              <span></span>
+              <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+            </label>
+          </div>
+        </form>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
+          <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-      </div>
-    </div>
-  </div>
 
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
