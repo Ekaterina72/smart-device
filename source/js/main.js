@@ -1,9 +1,9 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { initAccordions } from './init-accordion';
-import { initPhoneMask } from './phone-mask';
-import { initshowAbout } from './show-about';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {initAccordions} from './init-accordion';
+import {initPhoneMask} from './phone-mask';
+import {initshowAbout} from './show-about';
 
 // ---------------------------------n
 

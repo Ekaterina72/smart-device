@@ -52,7 +52,6 @@
   }
 
   @include retina {
-
     @include vp-1919 {
       &--production {
         background-image: url("../../img/production-bg@2x.jpg");
@@ -65,7 +64,6 @@
       &--lighting-details {
         background-image: url("../../img/lighting-details-bg@2x.jpg");
       }
-
     }
 
     @include vp-1023 {

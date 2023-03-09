@@ -1519,6 +1519,10 @@ button,
   cursor: pointer;
 }
 
+.modal__close-btn.focus-visible:focus {
+  opacity: 0.7;
+}
+
 .modal--responsive .modal__content {
   width: 100%;
 }
@@ -2884,6 +2888,10 @@ button,
 
   .footer-tel__link:hover:not(.focus-visible) {
     color: #f2f5f6;
+  }
+
+  .modal__close-btn:hover:not(.focus-visible) {
+    opacity: 0.7;
   }
 
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {

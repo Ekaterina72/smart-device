@@ -15,7 +15,6 @@
   }
 
   @include retina {
-
     @include vp-1023 {
       background-image: url("../../img/main-bg-tablet@2x.jpg");
     }
@@ -69,7 +68,7 @@
 
 .intro__description {
   max-width: 685px;
-  margin: 0px 0px 47px 0px;
+  margin: 0 0 47px 0;
   font-size: 22px;
   line-height: 34px;
 

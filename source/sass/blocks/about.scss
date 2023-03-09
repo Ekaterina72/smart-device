@@ -67,12 +67,12 @@
   }
 }
 
-.about div[data-about=more] {
+.about div[data-about="more"] {
   display: none;
 }
 
 @include vp-767 {
-  .about span[data-about=more-mobile] {
+  .about span[data-about="more-mobile"] {
     display: none;
   }
 }

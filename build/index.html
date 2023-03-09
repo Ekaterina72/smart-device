@@ -167,7 +167,7 @@
                 </div>
                 <div class="feedback-form__tel">
                   <label>
-                    <input type="tel" name="user-tel" required placeholder="Телефон" aria-label="tel input">
+                    <input type="tel" name="user-tel" required placeholder="Телефон">
                     <span class="visually-hidden">Контактный телефон</span>
                   </label>
                 </div>
@@ -281,17 +281,17 @@
       <div class="modal__content">
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="modal__form feedback-form feedback-form--modal" action="https://echo.htmlacademy.ru/"
-          method="post">
+        <form class="modal__form feedback-form feedback-form--modal" action="https://echo.htmlacademy.ru/" method="post"
+          data-form-validate>
           <div class="feedback-form__name">
             <label>
-              <input type="text" name="user-name" required placeholder="Имя">
+              <input type="text" name="user-name" required placeholder="Имя" data-focus>
               <span class="visually-hidden">Ваше имя</span>
             </label>
           </div>
           <div class="feedback-form__tel">
             <label>
-              <input type="tel" name="user-tel" required placeholder="Телефон" aria-label="tel input">
+              <input type="tel" name="user-tel" required placeholder="Телефон" data-validate-type="phone">
               <span class="visually-hidden">Контактный телефон</span>
             </label>
           </div>
@@ -301,7 +301,8 @@
               <span class="visually-hidden">Ваш вопрос</span>
             </label>
           </div>
-          <button class="btn feedback-form__button feedback-form__button--modal" type="submit">Отправить</button>
+          <button class="btn feedback-form__button feedback-form__button--modal" type="submit"
+            data-focus>Отправить</button>
           <div class="feedback-form__checkbox feedback-form__checkbox--modal">
             <label>
               <input type="checkbox" name="user-data-agreement" checked required>

@@ -46,4 +46,4 @@ const initshowAbout = () => {
   }
 };
 
-export { initshowAbout };
+export {initshowAbout};
