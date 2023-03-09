@@ -800,7 +800,7 @@ button,
 
 .intro__description {
   max-width: 685px;
-  margin: 0px 0px 47px 0px;
+  margin: 0 0 47px 0;
   font-size: 22px;
   line-height: 34px;
 }
@@ -1360,7 +1360,6 @@ button,
 }
 
 .navigation__list {
-  margin-left: auto;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1500,7 +1499,7 @@ button,
 .modal__content {
   position: relative;
   left: -7px;
-  min-width: 500px;
+  width: 500px;
   padding: 40px;
   background-color: #00b2ff;
   color: #ffffff;

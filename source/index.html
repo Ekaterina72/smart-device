@@ -15,7 +15,7 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" data-fix-block>
       <div class="container">
         <div class="header__container">
           <picture>
@@ -155,17 +155,19 @@
       <section class="feedback" id="feedback">
         <div class="container">
           <div class="feedback__container">
-            <div class="feedback__content" data-tabs="element">
+            <div class="feedback__content" data-tabs="element" data-form-validate>
               <h2 class="feedback__title section-title">Остались вопросы? Задайте их&nbsp;нам!</h2>
               <p class="feedback__description">Мы&nbsp;проконсультируем Вас бесплатно</p>
               <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-                <div class="feedback-form__name">
+                <div class="feedback-form__name" data-validate-type="text" , data-limitation="name" ,
+                  data-message-base="Поле обязательно к заполнению" , data-required>
                   <label>
                     <input type="text" name="user-name" required placeholder="Имя">
                     <span class="visually-hidden">Ваше имя</span>
                   </label>
                 </div>
-                <div class="feedback-form__tel">
+                <div class="feedback-form__tel" data-validate-type="phone" , data-on-input-validate,
+                  data-message-base="Поле обязательно к заполнению" , data-required>
                   <label>
                     <input type="tel" name="user-tel" required placeholder="Телефон">
                     <span class="visually-hidden">Контактный телефон</span>
@@ -178,7 +180,8 @@
                   </label>
                 </div>
                 <button class="btn feedback-form__button" type="submit">Задать вопрос</button>
-                <div class="feedback-form__checkbox">
+                <div class="feedback-form__checkbox" data-validate-type="checkbox" ,
+                  data-message-base="Поле обязательно к заполнению">
                   <label>
                     <input type="checkbox" name="user-data-agreement" checked required>
                     <span></span>
@@ -278,20 +281,23 @@
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
+      <div class="modal__content" data-form-validate>
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="modal__form feedback-form feedback-form--modal" action="https://echo.htmlacademy.ru/" method="post"
-          data-form-validate>
-          <div class="feedback-form__name">
+        <form class="modal__form feedback-form feedback-form--modal" action="https://echo.htmlacademy.ru/"
+          method="post">
+          <div class="feedback-form__name" data-validate-type="text" , data-limitation="name" ,
+            data-message-base="Поле обязательно к заполнению" , data-required>
             <label>
               <input type="text" name="user-name" required placeholder="Имя" data-focus>
               <span class="visually-hidden">Ваше имя</span>
             </label>
           </div>
-          <div class="feedback-form__tel">
+          <div class="feedback-form__tel" data-validate-type="phone" , data-on-input-validate,
+            data-message-base="Поле обязательно к заполнению" , data-message-extra="Введите номер полностью" ,
+            data-required>
             <label>
-              <input type="tel" name="user-tel" required placeholder="Телефон" data-validate-type="phone">
+              <input type="tel" name="user-tel" required placeholder="Телефон">
               <span class="visually-hidden">Контактный телефон</span>
             </label>
           </div>
@@ -303,7 +309,8 @@
           </div>
           <button class="btn feedback-form__button feedback-form__button--modal" type="submit"
             data-focus>Отправить</button>
-          <div class="feedback-form__checkbox feedback-form__checkbox--modal">
+          <div class="feedback-form__checkbox feedback-form__checkbox--modal" data-validate-type="checkbox" ,
+            data-message-base="Поле обязательно к заполнению">
             <label>
               <input type="checkbox" name="user-data-agreement" checked required>
               <span></span>
