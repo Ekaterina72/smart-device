@@ -223,7 +223,7 @@
               </li>
             </ul>
           </div>
-          <div class="accordion footer__accordion" data-accordion="parent" data-single
+          <div class="accordion footer__accordion" data-accordion="parent" data-single="data-single"
             data-destroy="(max-width: 767px)">
             <div class="footer__navigation accordion__element navigation" data-accordion="element">
               <button class="accordion__button btn footer__title" type="button" data-accordion="button">
@@ -280,7 +280,7 @@
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
       <div class="modal__content" data-form-validate>
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -289,7 +289,7 @@
           <div class="feedback-form__name" data-validate-type="text" , data-limitation="name" ,
             data-message-base="Поле обязательно к заполнению" , data-required>
             <label>
-              <input type="text" name="user-name" required placeholder="Имя" data-focus>
+              <input type="text" name="user-name" required placeholder="Имя" data-focus="data-focus">
               <span class="visually-hidden">Ваше имя</span>
             </label>
           </div>
@@ -307,8 +307,7 @@
               <span class="visually-hidden">Ваш вопрос</span>
             </label>
           </div>
-          <button class="btn feedback-form__button feedback-form__button--modal" type="submit"
-            data-focus>Отправить</button>
+          <button class="btn feedback-form__button feedback-form__button--modal" type="submit">Отправить</button>
           <div class="feedback-form__checkbox feedback-form__checkbox--modal" data-validate-type="checkbox" ,
             data-message-base="Поле обязательно к заполнению">
             <label>
@@ -318,7 +317,8 @@
             </label>
           </div>
         </form>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап"
+          data-close-modal="data-close-modal">
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>

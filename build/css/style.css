@@ -1107,9 +1107,9 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .feedback-form--modal {
@@ -1430,6 +1430,24 @@ button,
 }
 
 .accordion__content {
+  overflow: hidden;
+}
+
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
   overflow: hidden;
 }
 
@@ -2202,7 +2220,7 @@ button,
   }
 
   .intro__button {
-    padding: 10px 30px;
+    padding: 15px 25px;
     margin-left: 45px;
   }
 
@@ -2334,17 +2352,8 @@ button,
     padding: 28px 15px;
   }
 
-  .feedback-form textarea {
-    height: 180px;
-    padding: 20px 15px;
-  }
-
   .feedback-form__checkbox label {
-    margin: 14px 0 0;
-  }
-
-  .feedback-form__checkbox label {
-    margin: 4px 5px 0;
+    margin: 18px 0 0;
   }
 
   .footer__container {
@@ -2456,6 +2465,7 @@ button,
   }
 
   .intro__button {
+    padding: 10px 30px;
     min-width: 100%;
     margin-left: 0;
     font-size: 14px;
@@ -2598,9 +2608,18 @@ button,
     grid-column: span 1;
   }
 
+  .feedback-form textarea {
+    height: 180px;
+    padding: 20px 15px;
+  }
+
   .feedback-form__button {
     min-width: 100%;
     margin-top: 4px;
+  }
+
+  .feedback-form__checkbox label {
+    margin: 4px 5px 0;
   }
 
   .footer__container {
