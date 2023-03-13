@@ -703,7 +703,7 @@ button,
 .header__contacts-list {
   list-style-type: none;
   min-width: 460px;
-  margin: 0;
+  margin: -8px 0 0 -5px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,7 +737,7 @@ button,
 .header__button {
   min-width: 160px;
   min-height: 40px;
-  margin-right: 50px;
+  margin: -5px 50px 0 0;
   padding: 10px 15px 10px;
   font-size: 14px;
   color: inherit;
@@ -844,7 +844,7 @@ button,
 .advantage-card {
   max-width: 595px;
   min-height: 300px;
-  padding: 40px 45px;
+  padding: 37px 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,7 +903,7 @@ button,
 }
 
 .products__container {
-  padding: 70px 0 130px;
+  padding: 66px 0 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,7 +914,7 @@ button,
 }
 
 .products__title {
-  margin: 0 0 50px 0;
+  margin: 0 0 54px 0;
   color: #ffffff;
 }
 
@@ -961,7 +961,7 @@ button,
   width: 100%;
   height: 100%;
   display: block;
-  padding: 50px 40px;
+  padding: 46px 40px;
 }
 
 .product-card__link::before {
@@ -1013,7 +1013,7 @@ button,
 
 .about__container {
   position: relative;
-  padding: 60px 0 115px 250px;
+  padding: 60px 0 119px 250px;
 }
 
 .about__container::before {
@@ -1028,7 +1028,7 @@ button,
 }
 
 .about__title {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
 }
 
 .about p {
@@ -1124,7 +1124,6 @@ button,
   background-color: rgba(4, 20, 39, 0.15);
   border: 1px solid transparent;
   border-radius: 3px;
-  cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -2172,6 +2171,7 @@ button,
   .header__contacts-list {
     min-width: auto;
     margin-top: -5px;
+    margin-left: 0;
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px;
     column-gap: 10px;

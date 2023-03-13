@@ -168,6 +168,7 @@ export class Modals {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
+      document.querySelector('[data-focus]').focus();
     }, this._eventTimeout);
   }
 

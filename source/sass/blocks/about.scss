@@ -4,7 +4,7 @@
 
 .about__container {
   position: relative;
-  padding: 60px 0 115px 250px;
+  padding: 60px 0 119px 250px;
 
   &::before {
     position: absolute;
@@ -42,7 +42,7 @@
 }
 
 .about__title {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
 
   @include vp-1023 {
     margin-bottom: 12px;
