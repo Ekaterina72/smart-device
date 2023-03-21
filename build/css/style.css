@@ -871,7 +871,7 @@ button,
   color: #f2f5f6;
 }
 
-.advantage-card__title {
+.advantage-card h3 {
   margin: 0 0 15px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
@@ -883,11 +883,11 @@ button,
   transition: color 0.2s ease-in;
 }
 
-.advantage-card:hover .advantage-card__title {
+.advantage-card:hover h3 {
   color: #f2f5f6;
 }
 
-.advantage-card__description {
+.advantage-card p {
   margin: 0 0 15px 0;
 }
 
@@ -1027,8 +1027,12 @@ button,
   background-repeat: no-repeat;
 }
 
-.about__title {
+.about h2 {
   margin: 0 0 12px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
 }
 
 .about p {
@@ -2229,11 +2233,11 @@ button,
     margin-bottom: 12px;
   }
 
-  .advantage-card__title {
+  .advantage-card h3 {
     margin-bottom: 7px;
   }
 
-  .advantage-card__description {
+  .advantage-card p {
     margin-bottom: 10px;
   }
 
@@ -2294,7 +2298,7 @@ button,
     background-repeat: no-repeat;
   }
 
-  .about__title {
+  .about h2 {
     margin-bottom: 12px;
   }
 
@@ -2489,13 +2493,13 @@ button,
     margin-bottom: 20px;
   }
 
-  .advantage-card__title {
+  .advantage-card h3 {
     margin-bottom: 17px;
     font-size: 20px;
     line-height: 22px;
   }
 
-  .advantage-card__description {
+  .advantage-card p {
     font-size: 14px;
     line-height: 19px;
   }
@@ -2555,7 +2559,7 @@ button,
     display: none;
   }
 
-  .about__title {
+  .about h2 {
     font-size: 28px;
     line-height: 39px;
   }

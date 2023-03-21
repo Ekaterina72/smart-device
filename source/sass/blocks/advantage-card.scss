@@ -43,7 +43,7 @@
   color: $color-alice-blue;
 }
 
-.advantage-card__title {
+.advantage-card h3 {
   margin: 0 0 15px 0;
   font-family: $ff-roboto;
   font-size: 24px;
@@ -63,11 +63,11 @@
   }
 }
 
-.advantage-card:hover .advantage-card__title {
+.advantage-card:hover h3 {
   color: $color-alice-blue;
 }
 
-.advantage-card__description {
+.advantage-card p {
   margin: 0 0 15px 0;
 
   @include vp-1023 {

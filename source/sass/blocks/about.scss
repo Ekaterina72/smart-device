@@ -41,8 +41,12 @@
   }
 }
 
-.about__title {
+.about h2 {
   margin: 0 0 12px 0;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
 
   @include vp-1023 {
     margin-bottom: 12px;
