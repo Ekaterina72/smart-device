@@ -14,8 +14,8 @@
 }
 
 .footer-tel__link {
+  display: inline-block;
   color: inherit;
-  display: block;
 
   @include vp-767 {
     min-width: 100%;

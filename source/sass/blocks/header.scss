@@ -46,7 +46,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 52px;
   row-gap: 10px;
 
   @include vp-1023 {
@@ -58,18 +58,14 @@
 }
 
 .header__contacts-item {
+  min-width: 200px;
+  max-width: 245px;
   flex-grow: 1;
   display: flex;
   justify-content: start;
 
-  &--tel {
-    justify-content: end;
-  }
-
-  @include vp-1439 {
-    &--tel {
-      justify-content: start;
-    }
+  @include vp-1023 {
+    min-width: auto;
   }
 }
 

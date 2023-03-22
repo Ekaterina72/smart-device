@@ -23,7 +23,7 @@
       background-image: url("../../img/main-bg-mobile@2x.jpg");
     }
 
-    @include vp-1919 {
+    @media (min-width: ($vp-1024)) {
       background-image: url("../../img/main-bg@2x.jpg");
     }
   }

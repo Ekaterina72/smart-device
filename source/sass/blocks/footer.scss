@@ -63,7 +63,7 @@
 .footer__accordion {
   margin: 4px 0 0 0;
   display: grid;
-  grid-template-columns: auto 345px;
+  grid-template-columns: auto max-content;
   gap: 30px;
 
   @include vp-1023 {
@@ -98,7 +98,6 @@
   justify-self: end;
   max-width: 345px;
 
-
   @include vp-767 {
     justify-self: start;
     max-width: auto;
@@ -110,6 +109,7 @@
 
 .footer__address {
   margin: 0 0 10px 0;
+  justify-self: end;
   font-style: normal;
 
   @include vp-767 {
