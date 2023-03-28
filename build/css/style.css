@@ -767,7 +767,7 @@ button,
 .intro {
   color: #f2f5f6;
   background-color: #041827;
-  background-image: url("../../img/main-bg.jpg");
+  background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -935,15 +935,15 @@ button,
 }
 
 .product-card--production {
-  background-image: url("../../img/production-bg.jpg");
+  background-image: url("../img/production-bg.jpg");
 }
 
 .product-card--installation {
-  background-image: url("../../img/installation-bg.jpg");
+  background-image: url("../img/installation-bg.jpg");
 }
 
 .product-card--lighting-details {
-  background-image: url("../../img/lighting-details-bg.jpg");
+  background-image: url("../img/lighting-details-bg.jpg");
 }
 
 .product-card__link {
@@ -971,7 +971,7 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #00b2ff;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: background-color 0.3s ease;
@@ -1013,7 +1013,7 @@ button,
   left: 0;
   width: 150px;
   height: 320px;
-  background-image: url("../../img/year-img.png");
+  background-image: url("../img/year-img.png");
   background-repeat: no-repeat;
 }
 
@@ -1068,7 +1068,7 @@ button,
   margin-top: 82px;
   margin-left: auto;
   margin-right: 10%;
-  background-image: url("../../img/svg/paper_airplane.svg");
+  background-image: url("../img/svg/paper_airplane.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2130,19 +2130,19 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .intro {
-    background-image: url("../../img/main-bg@2x.jpg");
+    background-image: url("../img/main-bg@2x.jpg");
   }
 
   .product-card--production {
-    background-image: url("../../img/production-bg@2x.jpg");
+    background-image: url("../img/production-bg@2x.jpg");
   }
 
   .product-card--installation {
-    background-image: url("../../img/installation-bg@2x.jpg");
+    background-image: url("../img/installation-bg@2x.jpg");
   }
 
   .product-card--lighting-details {
-    background-image: url("../../img/lighting-details-bg@2x.jpg");
+    background-image: url("../img/lighting-details-bg@2x.jpg");
   }
 }
 
@@ -2188,7 +2188,7 @@ button,
   }
 
   .intro {
-    background-image: url("../../img/main-bg-tablet.jpg");
+    background-image: url("../img/main-bg-tablet.jpg");
   }
 
   .intro__container {
@@ -2255,15 +2255,15 @@ button,
   }
 
   .product-card--production {
-    background-image: url("../../img/production-bg-tablet.jpg");
+    background-image: url("../img/production-bg-tablet.jpg");
   }
 
   .product-card--installation {
-    background-image: url("../../img/installation-bg-tablet.jpg");
+    background-image: url("../img/installation-bg-tablet.jpg");
   }
 
   .product-card--lighting-details {
-    background-image: url("../../img/lighting-details-bg-tablet.jpg");
+    background-image: url("../img/lighting-details-bg-tablet.jpg");
   }
 
   .product-card__link {
@@ -2285,7 +2285,7 @@ button,
     left: -5px;
     width: 150px;
     height: 320px;
-    background-image: url("../../img/year-img.png");
+    background-image: url("../img/year-img.png");
     background-repeat: no-repeat;
   }
 
@@ -2391,19 +2391,19 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
   .intro {
-    background-image: url("../../img/main-bg-tablet@2x.jpg");
+    background-image: url("../img/main-bg-tablet@2x.jpg");
   }
 
   .product-card--production {
-    background-image: url("../../img/production-bg-tablet@2x.jpg");
+    background-image: url("../img/production-bg-tablet@2x.jpg");
   }
 
   .product-card--installation {
-    background-image: url("../../img/installation-bg-tablet@2x.jpg");
+    background-image: url("../img/installation-bg-tablet@2x.jpg");
   }
 
   .product-card--lighting-details {
-    background-image: url("../../img/lighting-details-bg-tablet@2x.jpg");
+    background-image: url("../img/lighting-details-bg-tablet@2x.jpg");
   }
 }
 
@@ -2421,7 +2421,7 @@ button,
   }
 
   .intro {
-    background-image: url("../../img/main-bg-mobile.jpg");
+    background-image: url("../img/main-bg-mobile.jpg");
   }
 
   .intro__container {
@@ -2511,15 +2511,15 @@ button,
   }
 
   .product-card--production {
-    background-image: url("../../img/production-bg-mobile.jpg");
+    background-image: url("../img/production-bg-mobile.jpg");
   }
 
   .product-card--installation {
-    background-image: url("../../img/installation-bg-mobile.jpg");
+    background-image: url("../img/installation-bg-mobile.jpg");
   }
 
   .product-card--lighting-details {
-    background-image: url("../../img/lighting-details-bg-mobile.jpg");
+    background-image: url("../img/lighting-details-bg-mobile.jpg");
   }
 
   .product-card__link {
@@ -2746,19 +2746,19 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .intro {
-    background-image: url("../../img/main-bg-mobile@2x.jpg");
+    background-image: url("../img/main-bg-mobile@2x.jpg");
   }
 
   .product-card--production {
-    background-image: url("../../img/production-bg-mobile@2x.jpg");
+    background-image: url("../img/production-bg-mobile@2x.jpg");
   }
 
   .product-card--installation {
-    background-image: url("../../img/installation-bg-mobile@2x.jpg");
+    background-image: url("../img/installation-bg-mobile@2x.jpg");
   }
 
   .product-card--lighting-details {
-    background-image: url("../../img/lighting-details-bg-mobile@2x.jpg");
+    background-image: url("../img/lighting-details-bg-mobile@2x.jpg");
   }
 }
 
