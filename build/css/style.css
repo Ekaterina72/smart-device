@@ -457,12 +457,6 @@ textarea {
   resize: none;
 }
 
-input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-  box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
-}
-
 input,
 textarea {
   border-radius: 0;
@@ -655,6 +649,10 @@ button,
   border: 1px solid transparent;
   border-radius: 3px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1174,6 +1172,13 @@ button,
   padding: 22px 15px;
 }
 
+.feedback-form input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 1000px #019adf;
+  box-shadow: inset 0 0 0 1000px #019adf;
+  border-color: #019adf;
+  -webkit-text-fill-color: #ffffff;
+}
+
 .feedback-form__button {
   min-width: 265px;
   margin-top: 7px;
@@ -1195,6 +1200,12 @@ button,
   background-color: transparent;
   border-color: #041827;
   color: #041827;
+}
+
+.feedback-form__checkbox {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .feedback-form__checkbox label {
@@ -1239,7 +1250,7 @@ button,
 }
 
 .feedback-form input[type=checkbox]:checked + span {
-  background-image: url("../../img/svg/checkbox-tick.svg");
+  background-image: url("../img/svg/checkbox-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

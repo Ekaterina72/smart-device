@@ -18,11 +18,12 @@
     <header class="header" data-fix-block>
       <div class="container">
         <div class="header__container">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/logo-icon.svg" width="35" height="35">
-            <img class="header__logo" src="img/svg/logo.svg" alt="Логотип Смарт Дивайс." width="215" height="55">
-          </picture>
-
+          <a class="header__logo-link">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-icon.svg" width="35" height="35">
+              <img class="header__logo" src="img/svg/logo.svg" alt="Логотип Смарт Дивайс." width="215" height="55">
+            </picture>
+          </a>
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
               <a href="mailto:info@sd.ru" class="header__contacts-link header-link">
@@ -187,7 +188,6 @@
                     <span class="visually-hidden">Ваш вопрос</span>
                   </label>
                 </div>
-                <button class="btn feedback-form__button" type="submit">Задать вопрос</button>
                 <div class="feedback-form__checkbox" data-validate-type="checkbox"
                   data-message-base="Поле обязательно к заполнению">
                   <label>
@@ -196,6 +196,7 @@
                     <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                   </label>
                 </div>
+                <button class="btn feedback-form__button" type="submit">Задать вопрос</button>
               </form>
             </div>
           </div>
@@ -206,7 +207,9 @@
       <div class="container">
         <div class="footer__container">
           <div class="footer__social">
-            <img class="footer__logo" src="img/svg/logo.svg" alt="Логотип Смарт Дивайс." width="215" height="55">
+            <a href="#">
+              <img class="footer__logo" src="img/svg/logo.svg" alt="Логотип Смарт Дивайс." width="215" height="55">
+            </a>
             <ul class="footer__social-list socials">
               <li class="socials__item">
                 <a class="socials__link " href="#">
@@ -323,7 +326,6 @@
               <span class="visually-hidden">Ваш вопрос</span>
             </label>
           </div>
-          <button class="btn feedback-form__button feedback-form__button--modal" type="submit">Отправить</button>
           <div class="feedback-form__checkbox feedback-form__checkbox--modal" data-validate-type="checkbox"
             data-message-base="Поле обязательно к заполнению">
             <label>
@@ -332,6 +334,7 @@
               <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
             </label>
           </div>
+          <button class="btn feedback-form__button feedback-form__button--modal" type="submit">Отправить</button>
         </form>
         <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal">
           <svg width="20" height="20">
