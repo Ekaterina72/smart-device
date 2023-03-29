@@ -8,6 +8,10 @@
 
   &--production {
     background-image: url("../img/production-bg.jpg");
+
+    @supports (background-image: url("../img/production-bg.webp")) {
+      background-image: url("../img/production-bg.webp");
+    }
   }
 
   &--installation {
@@ -19,35 +23,57 @@
   }
 
   @include vp-1023 {
-    min-width: 670px;
+    min-width: 100%;
     min-height: 250px;
 
     &--production {
       background-image: url("../img/production-bg-tablet.jpg");
+
+      @supports (background-image: url("../img/production-bg-tablet.webp")) {
+        background-image: url("../img/production-bg-tablet.webp");
+      }
     }
 
     &--installation {
       background-image: url("../img/installation-bg-tablet.jpg");
+
+      @supports (background-image: url("../img/installation-bg-tablet.webp")) {
+        background-image: url("../img/installation-bg-tablet.webp");
+      }
     }
 
     &--lighting-details {
       background-image: url("../img/lighting-details-bg-tablet.jpg");
+
+      @supports (background-image: url("../img/lighting-details-bg-tablet.webp")) {
+        background-image: url("../img/lighting-details-bg-tablet.webp");
+      }
     }
   }
 
   @include vp-767 {
-    min-width: 270px;
-
     &--production {
       background-image: url("../img/production-bg-mobile.jpg");
+
+      @supports (background-image: url("../img/production-bg-mobile.webp")) {
+        background-image: url("../img/production-bg-mobile.webp");
+      }
     }
 
     &--installation {
       background-image: url("../img/installation-bg-mobile.jpg");
+
+      @supports (background-image: url("../img/installation-bg-mobile.webp")) {
+        background-image: url("../img/installation-bg-mobile.webp");
+      }
     }
 
     &--lighting-details {
       background-image: url("../img/lighting-details-bg-mobile.jpg");
+
+      @supports (background-image: url("../img/lighting-details-bg-mobile.webp")) {
+        background-image: url("../img/lighting-details-bg-mobile.webp");
+      }
     }
   }
 
@@ -55,42 +81,78 @@
     @media (min-width: ($vp-1024)) {
       &--production {
         background-image: url("../img/production-bg@2x.jpg");
+
+        @supports (background-image: url("../img/production-bg@2x.webp")) {
+          background-image: url("../img/production-bg@2x.webp");
+        }
       }
 
       &--installation {
         background-image: url("../img/installation-bg@2x.jpg");
+
+        @supports (background-image: url("../img/installation-bg@2x.webp")) {
+          background-image: url("../img/installation-bg@2x.webp");
+        }
       }
 
       &--lighting-details {
         background-image: url("../img/lighting-details-bg@2x.jpg");
+
+        @supports (background-image: url("../img/lighting-details-bg@2x.webp")) {
+          background-image: url("../img/lighting-details-bg@2x.webp");
+        }
       }
     }
 
     @include vp-1023 {
       &--production {
         background-image: url("../img/production-bg-tablet@2x.jpg");
+
+        @supports (background-image: url("../img/production-bg-tablet@2x.webp")) {
+          background-image: url("../img/production-bg-tablet@2x.webp");
+        }
       }
 
       &--installation {
         background-image: url("../img/installation-bg-tablet@2x.jpg");
+
+        @supports (background-image: url("../img/installation-bg-tablet@2x.webp")) {
+          background-image: url("../img/installation-bg-tablet@2x.webp");
+        }
       }
 
       &--lighting-details {
         background-image: url("../img/lighting-details-bg-tablet@2x.jpg");
+
+        @supports (background-image: url("../img/lighting-details-bg-tablet@2x.webp")) {
+          background-image: url("../img/lighting-details-bg-tablet@2x.webp");
+        }
       }
     }
 
     @include vp-767 {
       &--production {
         background-image: url("../img/production-bg-mobile@2x.jpg");
+
+        @supports (background-image: url("../img/production-bg-mobile@2x.webp")) {
+          background-image: url("../img/production-bg-mobile@2x.webp");
+        }
       }
 
       &--installation {
         background-image: url("../img/installation-bg-mobile@2x.jpg");
+
+        @supports (background-image: url("../img/installation-bg-mobile@2x.webp")) {
+          background-image: url("../img/installation-bg-mobile@2x.webp");
+        }
       }
 
       &--lighting-details {
         background-image: url("../img/lighting-details-bg-mobile@2x.jpg");
+
+        @supports (background-image: url("../img/lighting-details-bg-mobile@2x.webp")) {
+          background-image: url("../img/lighting-details-bg-mobile@2x.webp");
+        }
       }
     }
   }

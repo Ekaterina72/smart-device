@@ -936,6 +936,12 @@ button,
   background-image: url("../img/production-bg.jpg");
 }
 
+@supports (background-image: url("../img/production-bg.webp")) {
+  .product-card--production {
+    background-image: url("../img/production-bg.webp");
+  }
+}
+
 .product-card--installation {
   background-image: url("../img/installation-bg.jpg");
 }
@@ -1013,6 +1019,12 @@ button,
   height: 320px;
   background-image: url("../img/year-img.png");
   background-repeat: no-repeat;
+}
+
+@supports (background-image: url("../img/year-img.webp")) {
+  .about__container::before {
+    background-image: url("../img/year-img.webp");
+  }
 }
 
 .about h2 {
@@ -2144,17 +2156,41 @@ button,
     background-image: url("../img/main-bg@2x.jpg");
   }
 
+@supports (background-image: url("../img/main-bg@2x.webp")) {
+    .intro {
+      background-image: url("../img/main-bg@2x.webp");
+    }
+}
+
   .product-card--production {
     background-image: url("../img/production-bg@2x.jpg");
   }
+
+@supports (background-image: url("../img/production-bg@2x.webp")) {
+    .product-card--production {
+      background-image: url("../img/production-bg@2x.webp");
+    }
+}
 
   .product-card--installation {
     background-image: url("../img/installation-bg@2x.jpg");
   }
 
+@supports (background-image: url("../img/installation-bg@2x.webp")) {
+    .product-card--installation {
+      background-image: url("../img/installation-bg@2x.webp");
+    }
+}
+
   .product-card--lighting-details {
     background-image: url("../img/lighting-details-bg@2x.jpg");
   }
+
+@supports (background-image: url("../img/lighting-details-bg@2x.webp")) {
+    .product-card--lighting-details {
+      background-image: url("../img/lighting-details-bg@2x.webp");
+    }
+}
 }
 
 @media (max-width: 1023px) {
@@ -2202,6 +2238,12 @@ button,
     background-image: url("../img/main-bg-tablet.jpg");
   }
 
+@supports (background-image: url("../img/main-bg-tablet.webp")) {
+    .intro {
+      background-image: url("../img/main-bg-tablet.webp");
+    }
+}
+
   .intro__container {
     min-height: 640px;
     padding: 180px 0 150px;
@@ -2228,15 +2270,16 @@ button,
 
   .advantage-card {
     min-height: 360px;
-    padding: 40px 40px 20px;
+    padding: 39px 40px 20px;
   }
 
   .advantage-card__icon {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 
   .advantage-card h3 {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
+    line-height: 32px;
   }
 
   .advantage-card p {
@@ -2244,9 +2287,6 @@ button,
   }
 
   .products__container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     padding: 57px 0 66px;
   }
 
@@ -2261,7 +2301,7 @@ button,
   }
 
   .product-card {
-    min-width: 670px;
+    min-width: 100%;
     min-height: 250px;
   }
 
@@ -2269,13 +2309,31 @@ button,
     background-image: url("../img/production-bg-tablet.jpg");
   }
 
+@supports (background-image: url("../img/production-bg-tablet.webp")) {
+    .product-card--production {
+      background-image: url("../img/production-bg-tablet.webp");
+    }
+}
+
   .product-card--installation {
     background-image: url("../img/installation-bg-tablet.jpg");
   }
 
+@supports (background-image: url("../img/installation-bg-tablet.webp")) {
+    .product-card--installation {
+      background-image: url("../img/installation-bg-tablet.webp");
+    }
+}
+
   .product-card--lighting-details {
     background-image: url("../img/lighting-details-bg-tablet.jpg");
   }
+
+@supports (background-image: url("../img/lighting-details-bg-tablet.webp")) {
+    .product-card--lighting-details {
+      background-image: url("../img/lighting-details-bg-tablet.webp");
+    }
+}
 
   .product-card__link {
     padding: 38px 45px;
@@ -2290,14 +2348,8 @@ button,
   }
 
   .about__container::before {
-    position: absolute;
-    content: "";
     top: 40px;
     left: -5px;
-    width: 150px;
-    height: 320px;
-    background-image: url("../img/year-img.png");
-    background-repeat: no-repeat;
   }
 
   .about h2 {
@@ -2405,17 +2457,41 @@ button,
     background-image: url("../img/main-bg-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/main-bg-tablet@2x.webp")) {
+    .intro {
+      background-image: url("../img/main-bg-tablet@2x.webp");
+    }
+}
+
   .product-card--production {
     background-image: url("../img/production-bg-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/production-bg-tablet@2x.webp")) {
+    .product-card--production {
+      background-image: url("../img/production-bg-tablet@2x.webp");
+    }
+}
 
   .product-card--installation {
     background-image: url("../img/installation-bg-tablet@2x.jpg");
   }
 
+@supports (background-image: url("../img/installation-bg-tablet@2x.webp")) {
+    .product-card--installation {
+      background-image: url("../img/installation-bg-tablet@2x.webp");
+    }
+}
+
   .product-card--lighting-details {
     background-image: url("../img/lighting-details-bg-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/lighting-details-bg-tablet@2x.webp")) {
+    .product-card--lighting-details {
+      background-image: url("../img/lighting-details-bg-tablet@2x.webp");
+    }
+}
 }
 
 @media (max-width: 767px) {
@@ -2434,6 +2510,12 @@ button,
   .intro {
     background-image: url("../img/main-bg-mobile.jpg");
   }
+
+@supports (background-image: url("../img/main-bg-mobile.webp")) {
+    .intro {
+      background-image: url("../img/main-bg-mobile.webp");
+    }
+}
 
   .intro__container {
     min-height: 560px;
@@ -2480,6 +2562,7 @@ button,
   }
 
   .advantage-card {
+    min-width: 100%;
     min-height: 325px;
     padding: 25px 35px 55px 25px;
   }
@@ -2517,21 +2600,35 @@ button,
     display: none;
   }
 
-  .product-card {
-    min-width: 270px;
-  }
-
   .product-card--production {
     background-image: url("../img/production-bg-mobile.jpg");
   }
+
+@supports (background-image: url("../img/production-bg-mobile.webp")) {
+    .product-card--production {
+      background-image: url("../img/production-bg-mobile.webp");
+    }
+}
 
   .product-card--installation {
     background-image: url("../img/installation-bg-mobile.jpg");
   }
 
+@supports (background-image: url("../img/installation-bg-mobile.webp")) {
+    .product-card--installation {
+      background-image: url("../img/installation-bg-mobile.webp");
+    }
+}
+
   .product-card--lighting-details {
     background-image: url("../img/lighting-details-bg-mobile.jpg");
   }
+
+@supports (background-image: url("../img/lighting-details-bg-mobile.webp")) {
+    .product-card--lighting-details {
+      background-image: url("../img/lighting-details-bg-mobile.webp");
+    }
+}
 
   .product-card__link {
     padding: 25px 30px;
@@ -2760,17 +2857,41 @@ button,
     background-image: url("../img/main-bg-mobile@2x.jpg");
   }
 
+@supports (background-image: url("../img/main-bg-mobile@2x.webp")) {
+    .intro {
+      background-image: url("../img/main-bg-mobile@2x.webp");
+    }
+}
+
   .product-card--production {
     background-image: url("../img/production-bg-mobile@2x.jpg");
   }
+
+@supports (background-image: url("../img/production-bg-mobile@2x.webp")) {
+    .product-card--production {
+      background-image: url("../img/production-bg-mobile@2x.webp");
+    }
+}
 
   .product-card--installation {
     background-image: url("../img/installation-bg-mobile@2x.jpg");
   }
 
+@supports (background-image: url("../img/installation-bg-mobile@2x.webp")) {
+    .product-card--installation {
+      background-image: url("../img/installation-bg-mobile@2x.webp");
+    }
+}
+
   .product-card--lighting-details {
     background-image: url("../img/lighting-details-bg-mobile@2x.jpg");
   }
+
+@supports (background-image: url("../img/lighting-details-bg-mobile@2x.webp")) {
+    .product-card--lighting-details {
+      background-image: url("../img/lighting-details-bg-mobile@2x.webp");
+    }
+}
 }
 
 @media screen and (max-width: 767px) {

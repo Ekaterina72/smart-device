@@ -15,20 +15,18 @@
     height: 320px;
     background-image: url("../img/year-img.png");
     background-repeat: no-repeat;
+
+    @supports (background-image: url("../img/year-img.webp")) {
+      background-image: url("../img/year-img.webp");
+    }
   }
 
   @include vp-1023 {
     padding: 35px 0 77px 175px;
 
     &::before {
-      position: absolute;
-      content: "";
       top: 40px;
       left: -5px;
-      width: 150px;
-      height: 320px;
-      background-image: url("../img/year-img.png");
-      background-repeat: no-repeat;
     }
   }
 

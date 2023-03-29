@@ -10,10 +10,11 @@
 
   @include vp-1023 {
     min-height: 360px;
-    padding: 40px 40px 20px;
+    padding: 39px 40px 20px;
   }
 
   @include vp-767 {
+    min-width: 100%;
     min-height: 325px;
     padding: 25px 35px 55px 25px;
   }
@@ -31,7 +32,7 @@
   transition: color 0.2s ease-in;
 
   @include vp-1023 {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 
   @include vp-767 {
@@ -53,7 +54,8 @@
   transition: color 0.2s ease-in;
 
   @include vp-1023 {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
+    line-height: 32px;
   }
 
   @include vp-767 {
