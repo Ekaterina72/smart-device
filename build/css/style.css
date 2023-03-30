@@ -765,7 +765,6 @@ button,
 .intro {
   color: #f2f5f6;
   background-color: #041827;
-  background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -920,7 +919,7 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  gap: 85px;
+  gap: 7%;
 }
 
 .product-card {
@@ -956,6 +955,11 @@ button,
   height: 100%;
   display: block;
   padding: 46px 40px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 
 .product-card__link::before {
@@ -978,13 +982,11 @@ button,
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
 }
 
-.product-card__link.focus-visible:focus::before {
-  background-color: #041827;
+.product-card__link.focus-visible:focus {
+  -webkit-box-shadow: 0 0 20px 0 #00b2ff;
+  box-shadow: 0 0 20px 0 #00b2ff;
 }
 
 .product-card__link:active {
@@ -1326,6 +1328,11 @@ button,
   font-size: 15px;
   line-height: 16px;
   color: #ffffff;
+  cursor: text;
+}
+
+.footer__title.focus-visible:focus {
+  outline: none;
 }
 
 .footer__contacts {
@@ -1335,7 +1342,7 @@ button,
 }
 
 .footer__address {
-  margin: 0 0 10px 0;
+  margin: 0 0 7px 0;
   -ms-grid-column-align: end;
   justify-self: end;
   font-style: normal;
@@ -1377,7 +1384,7 @@ button,
 
 .navigation__list {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
@@ -1419,10 +1426,16 @@ button,
   color: #f2f5f6;
 }
 
+.navigation__link.focus-visible:focus {
+  outline-style: inset;
+  outline-color: #00b2ff;
+  border-radius: 3px;
+}
+
 .footer-tel {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1440,6 +1453,12 @@ button,
 
 .footer-tel__link.focus-visible:focus {
   color: #f2f5f6;
+}
+
+.footer-tel__link.focus-visible:focus {
+  outline-style: inset;
+  outline-color: #00b2ff;
+  border-radius: 3px;
 }
 
 .accordion__element {
@@ -2151,6 +2170,18 @@ button,
   }
 */
 
+@media (min-width: 1024px) {
+  .intro {
+    background-image: url("../img/main-bg.jpg");
+  }
+
+@supports (background-image: url("../img/main-bg.webp")) {
+    .intro {
+      background-image: url("../img/main-bg.webp");
+    }
+}
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .intro {
     background-image: url("../img/main-bg@2x.jpg");
@@ -2203,6 +2234,10 @@ button,
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+
+  .products__list {
+    gap: 3%;
   }
 }
 
@@ -2314,6 +2349,7 @@ button,
   .products__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
     gap: 30px;
   }
 
@@ -2766,6 +2802,11 @@ button,
 
   .footer__title {
     margin: 0;
+    cursor: pointer;
+  }
+
+  .footer__title.focus-visible:focus {
+    outline: auto;
   }
 
   .footer__contacts {
@@ -3006,8 +3047,9 @@ button,
     color: #f2f5f6;
   }
 
-  .product-card__link:hover:not(.focus-visible)::before {
-    background-color: #041827;
+  .product-card__link:hover:not(.focus-visible) {
+    -webkit-box-shadow: 0 0 20px 0 #00b2ff;
+    box-shadow: 0 0 20px 0 #00b2ff;
   }
 
   .about__button:hover:not(.focus-visible) {

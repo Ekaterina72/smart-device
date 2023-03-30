@@ -14,7 +14,7 @@
 
 .navigation__list {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
@@ -57,5 +57,11 @@
 
   @include hover-focus {
     color: $color-alice-blue;
+  }
+
+  @include focus {
+    outline-style: inset;
+    outline-color: $color-deep-sky-blue;
+    border-radius: 3px;
   }
 }

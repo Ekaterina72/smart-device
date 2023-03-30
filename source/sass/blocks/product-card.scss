@@ -164,6 +164,7 @@
   height: 100%;
   display: block;
   padding: 46px 40px;
+  transition: box-shadow $trans-default;
 
   &::before {
     position: absolute;
@@ -179,7 +180,6 @@
     background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-color $trans-default;
   }
 
   @include vp-1023 {
@@ -196,9 +196,7 @@
   }
 
   @include hover-focus {
-    &::before {
-      background-color: $color-black-pearl;
-    }
+    box-shadow: 0 0 20px 0 $color-deep-sky-blue;
   }
 
   &:active {

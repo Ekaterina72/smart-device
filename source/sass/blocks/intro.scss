@@ -1,10 +1,17 @@
 .intro {
   color: $color-alice-blue;
   background-color: $color-black-pearl;
-  background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: ($vp-1024)) {
+    background-image: url("../img/main-bg.jpg");
+
+    @supports (background-image: url("../img/main-bg.webp")) {
+      background-image: url("../img/main-bg.webp");
+    }
+  }
 
   @include vp-1023 {
     background-image: url("../img/main-bg-tablet.jpg");

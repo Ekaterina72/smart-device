@@ -1,7 +1,7 @@
 .footer-tel {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 1px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -23,5 +23,11 @@
 
   @include hover-focus {
     color: $color-alice-blue;
+  }
+
+  @include focus {
+    outline-style: inset;
+    outline-color: $color-deep-sky-blue;
+    border-radius: 3px;
   }
 }
