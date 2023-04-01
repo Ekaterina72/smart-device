@@ -20,10 +20,14 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 31px;
+
+  @include vp-1023 {
+    gap: 28px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 25px;
+    grid-auto-rows: 1fr;
   }
 }
