@@ -1311,10 +1311,8 @@ button,
   margin: 4px 0 0 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto -webkit-max-content;
-  -ms-grid-columns: auto max-content;
-  grid-template-columns: auto -webkit-max-content;
-  grid-template-columns: auto max-content;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
   gap: 30px;
 }
 
@@ -1329,10 +1327,6 @@ button,
   line-height: 16px;
   color: #ffffff;
   cursor: text;
-}
-
-.footer__title.focus-visible:focus {
-  outline: none;
 }
 
 .footer__contacts {
@@ -1378,8 +1372,8 @@ button,
 
 .navigation {
   min-width: 320px;
-  -ms-grid-column-align: center;
-  justify-self: center;
+  -ms-grid-column-align: end;
+  justify-self: end;
 }
 
 .navigation__list {
@@ -2409,10 +2403,6 @@ button,
   .footer__title {
     margin: 0;
     cursor: pointer;
-  }
-
-  .footer__title.focus-visible:focus {
-    outline: auto;
   }
 
   .footer__contacts {

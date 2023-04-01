@@ -63,7 +63,7 @@
 .footer__accordion {
   margin: 4px 0 0 0;
   display: grid;
-  grid-template-columns: auto max-content;
+  grid-template-columns: repeat(2, auto);
   gap: 30px;
 
   @include vp-1023 {
@@ -90,17 +90,9 @@
   color: $color-default-white;
   cursor: text;
 
-  @include focus {
-    outline: none;
-  }
-
   @include vp-767 {
     margin: 0;
     cursor: pointer;
-
-    @include focus {
-      outline: auto;
-    }
   }
 }
 

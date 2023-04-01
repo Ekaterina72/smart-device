@@ -1,6 +1,6 @@
 .navigation {
   min-width: 320px;
-  justify-self: center;
+  justify-self: end;
 
   @include vp-1023 {
     min-width: auto;
