@@ -62,6 +62,7 @@
   @include focus {
     outline-style: inset;
     outline-color: $color-deep-sky-blue;
+    outline-offset: -1px;
     border-radius: 3px;
   }
 }
